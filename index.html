@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Página HTML5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        video, img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ejemplo de Página con Video e Imagen</h1>
+        <button onclick="document.getElementById('video').style.display = 'block';">Ver Video</button>
+        <button onclick="document.getElementById('audio').style.display = 'block';">Ver Audio</button>
+        
+        <div id="video" style="display: none; margin-top: 20px;">
+            <h2>Video</h2>
+            <video controls>
+                <source src="imagenes/video.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+        <div id="audio" style="display: none; margin-top: 20px;">
+            <h2>audio</h2>
+            <audio controls autoplay >
+                <source src="imagenes/audio.mp3" type="audio/mpg">
+            </audio>
+        </div>
+    </div>
+</body>
+</html>
